@@ -404,6 +404,10 @@ for repo_dir in "$ROOT"/*; do
   [ -d "$repo_dir/.git" ] || continue
   repo_name="$(basename "$repo_dir")"
   [ "$repo_name" = "$SOURCE_REPO" ] && continue
+  if [ -d "$repo_dir/environment-aware" ]; then
+    echo "skipped $repo_name (already has environment-aware/)"
+    continue
+  fi
 
   repo_slug="$(git -C "$repo_dir" remote get-url origin 2>/dev/null | sed -E 's#^https://github.com/pansla/##; s#^git@github.com:pansla/##; s#\.git$##')"
   [ -n "$repo_slug" ] || repo_slug="$repo_name"

@@ -1,5 +1,9 @@
 # Environment Awareness
 
+## Environment Preflight
+
+Before ingesting the rest of this repository context, read `environment-aware/README.md` and every file it lists. This is the first-read gate because it defines the local runtime, auth, ports, tools, and constraints that change the correct execution path.
+
 Environment Awareness is a small agent-onboarding pattern for recording how work actually runs in a specific development environment.
 
 The goal is simple: future agents should not rediscover the same WSL, Podman, GitHub auth, port, dependency, permission, or network facts every time they enter a repo.

@@ -1,5 +1,7 @@
 # Onboarding
 
+Environment awareness comes first. Before following this onboarding sequence or ingesting generated context, read `environment-aware/README.md` and every file it lists. Those files define the local environment constraints that affect how the rest of this repository should be interpreted and executed.
+
 This repo is a reusable pattern for improving AI-agent efficiency across repositories.
 
 ## Project in one sentence

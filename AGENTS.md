@@ -1,5 +1,7 @@
 # Agent Instructions
 
+Environment awareness is the first gate. Before ingesting the rest of the repository context, read `environment-aware/README.md` and every file it lists.
+
 This repository defines an environment-aware onboarding pattern.
 
 ## Operating rule
